@@ -1,0 +1,27 @@
+h3 {
+  color: blue;
+}
+
+.rahmen_liste {
+  position: relative;
+  top: 40px;
+  border: black 2px dotted;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.rahmen_input_elemente {
+  position: relative;
+}
+
+#make {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+}
+
+#datum {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
