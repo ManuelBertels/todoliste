@@ -5,12 +5,7 @@ const listadd = () => {
 
   let datum_eingabe = document.querySelector("#datum");
 
-  div_container.innerHTML +=
-    '<li><input type="checkbox">' +
-    datum_eingabe.value +
-    " " +
-    eingabefeld.value +
-    "</input></li>";
+  div_container.innerHTML += `<li>${datum_eingabe.value},${eingabefeld.value}</li>`;
 
   eingabefeld.value = " ";
 };
