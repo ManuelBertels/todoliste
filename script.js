@@ -1,11 +1,13 @@
-const listadd = () => {
-  let eingabefeld = document.querySelector("#enter");
+const button = document.querySelector('[data-js="button"]');
+const datum = document.querySelector('[data-js="datum"]');
+const rahmen = document.querySelector('[data-js="rahmen_liste"]');
+const input = document.querySelector("#enter");
 
-  let div_container = document.querySelector("#list");
+const ol = document.createElement("ol");
+rahmen.appendChild(ol);
 
-  let datum_eingabe = document.querySelector("#datum");
-
-  div_container.innerHTML += `<li>${datum_eingabe.value},${eingabefeld.value}</li>`;
-
-  eingabefeld.value = " ";
-};
+button.addEventListener("click", () => {
+  const li = document.createElement("li");
+  li.textContent = `${input.value},${datum.value},`;
+  ol.appendChild(li);
+});
